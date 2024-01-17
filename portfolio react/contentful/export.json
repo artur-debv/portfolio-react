@@ -1,0 +1,2072 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "project",
+        "type": "ContentType",
+        "createdAt": "2023-12-19T21:58:39.813Z",
+        "updatedAt": "2023-12-29T23:04:15.016Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2023-12-29T23:04:15.016Z",
+        "firstPublishedAt": "2023-12-19T21:58:40.331Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Project",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projectImages",
+          "name": "projectImages",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "techStack",
+          "name": "techStack",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projectUrl",
+          "name": "ProjectUrl",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "repositoryUrl",
+          "name": "RepositoryUrl",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projectHighlight",
+          "name": "projectHighlight",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "id",
+          "name": "id",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "g6nnyc2v412y",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2023-12-19T21:58:40.537Z",
+        "createdBy": {
+          "sys": {
+            "id": "3ByM34a1VX4BNpKXtFZzjc",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-12-29T23:04:15.917Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3ByM34a1VX4BNpKXtFZzjc",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "project",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "projectImages",
+          "widgetId": "assetGalleryEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "techStack",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "projectUrl",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "repositoryUrl",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "projectHighlight",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "id",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "5uue64FTbB0HshKnfVZZAm",
+        "type": "Entry",
+        "createdAt": "2023-12-19T21:58:50.316Z",
+        "updatedAt": "2023-12-29T20:54:55.389Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 96,
+        "publishedAt": "2023-12-29T20:54:55.389Z",
+        "firstPublishedAt": "2023-12-19T22:27:02.057Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 11,
+        "version": 97,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Hooper Store"
+        },
+        "projectImages": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2NvnCSMmSyAia0KZCno52L"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "143KBo3sLKLqZ2KxCN4NW2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5hloeF1xydIGr4CuF9W7dJ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1IRg7qnWIzQNqplvFnaIiW"
+              }
+            }
+          ]
+        },
+        "techStack": {
+          "en-US": [
+            "React JS",
+            "Next.js",
+            "Javascript",
+            "Firebase",
+            "Stripe",
+            "React Hooks",
+            "Tailwind CSS",
+            "Zustand",
+            "Typescript"
+          ]
+        },
+        "description": {
+          "en-US": "HooperStore é um e-commerce originado da busca por um tênis de basquete mais acessível, motivando a criação de uma plataforma dedicada à compra de artigos esportivos para basquete.\n\nAo longo do desenvolvimento, explorei tecnologias como o Zustand e o Next.js, aprimorando meu conhecimento. Enfrentei desafios notáveis, especialmente ao integrar a API do Stripe com os Route Handlers do Next.js. "
+        },
+        "projectUrl": {
+          "en-US": "https://hooper-store.vercel.app"
+        },
+        "repositoryUrl": {
+          "en-US": "https://github.com/eduardosoutodefreitas/HooperStore"
+        },
+        "projectHighlight": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5lNacncuGJ8d5LOx6tntvQ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "3opIRDhVXb5u0jBuR7Py5H",
+        "type": "Entry",
+        "createdAt": "2023-12-19T22:27:19.014Z",
+        "updatedAt": "2023-12-24T00:10:01.108Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 88,
+        "publishedAt": "2023-12-24T00:10:01.108Z",
+        "firstPublishedAt": "2023-12-19T23:11:50.901Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 89,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "MealNu"
+        },
+        "projectImages": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5JHdBbwavJwklxHwRV07O3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "7kVC1EcRiiHwPbIMloNAwn"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2v7tDRwAPb24xqaQrWl6aD"
+              }
+            }
+          ]
+        },
+        "techStack": {
+          "en-US": [
+            "Prisma",
+            "Supabase",
+            "React JS",
+            "Next.js",
+            "Typescript",
+            "Tailwind CSS"
+          ]
+        },
+        "description": {
+          "en-US": "Seguindo a abordagem Mobile First e os Princípios SOLID, MealNu é a solução que desenvolvi como garçom freelancer. Os pratos eram deliciosos e bem apresentados, mas o cardápio carecia de fotos, prejudicando o estímulo visual essencial para a decisão do cliente.\n\nDecidi criar o MealNu, uma aplicação que proporciona aos clientes acesso completo aos detalhes dos produtos. Cada prato possui sua página dinâmica, com opções de modo claro/escuro, filtragem por categoria e um campo de pesquisa abrangente que busca não apenas o nome, mas também palavras na descrição da refeição."
+        },
+        "projectUrl": {
+          "en-US": "https://mealnu-lemon.vercel.app/"
+        },
+        "repositoryUrl": {
+          "en-US": "https://github.com/eduardosoutodefreitas/MealNu"
+        },
+        "projectHighlight": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3tLcuEP4PFsE70gY599Ogv"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "2crfaiAE8cuN3DVeTBrvwv",
+        "type": "Entry",
+        "createdAt": "2023-12-19T23:12:22.443Z",
+        "updatedAt": "2023-12-29T13:58:19.925Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 52,
+        "publishedAt": "2023-12-29T13:58:19.925Z",
+        "firstPublishedAt": "2023-12-19T23:21:04.503Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 53,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "automationTags": [],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "CodeTech"
+        },
+        "projectImages": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "4vxet54v3yS31aUCihigBK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "19WOypshM4NZkQSHdp8xlF"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6Fckudo7P8iV9lLDrK3fxg"
+              }
+            }
+          ]
+        },
+        "techStack": {
+          "en-US": [
+            "EmailJS",
+            "React JS",
+            "Typescript",
+            "Tailwind CSS",
+            "Next.Js",
+            "Context API"
+          ]
+        },
+        "description": {
+          "en-US": "Este projeto voluntário para a startup CodeTech destacou minha responsabilidade em todas as etapas do desenvolvimento, do design à implementação do código.\n\nA parte mais interessante desse projeto envolveu a solução que implementei para a forma de contato. Em vez do convencional formulário no final da landing page, optei por criar um formulário com animações dinâmicas. Esse formulário é acionado quando o usuário clica em um dos botões de ação da página. Busquei proporcionar uma experiência única com uma interface moderna e intuitiva, mantendo a tela livre de excessos visuais. Clique em \"Ler mais\" para conhecer os detalhes dessa abordagem inovadora."
+        },
+        "projectUrl": {
+          "en-US": "https://codetechbr.net.br/"
+        },
+        "projectHighlight": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4JGLwDHqC8O38qLGJ6uw8P"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "7xwqcWV7WU1S2F75KbyyHU",
+        "type": "Asset",
+        "createdAt": "2023-08-10T12:02:28.394Z",
+        "updatedAt": "2023-08-10T12:04:32.468Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-08-10T12:04:32.468Z",
+        "firstPublishedAt": "2023-08-10T12:04:32.468Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Eduardo's picture"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/7xwqcWV7WU1S2F75KbyyHU/f999f67027314a3d7aba481ca407f5a4/freitas.dev.jpg",
+            "details": {
+              "size": 6726,
+              "image": {
+                "width": 460,
+                "height": 460
+              }
+            },
+            "fileName": "freitas.dev.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "48HI836JSYEJexItbporfz",
+        "type": "Asset",
+        "createdAt": "2023-08-10T12:23:26.935Z",
+        "updatedAt": "2023-08-10T12:24:25.841Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-08-10T12:24:25.841Z",
+        "firstPublishedAt": "2023-08-10T12:24:25.841Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "First blog cover"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/48HI836JSYEJexItbporfz/9d146e7eac90a9ebe4c51903f9feeccd/blog_image_post.jpg",
+            "details": {
+              "size": 1045107,
+              "image": {
+                "width": 3882,
+                "height": 2584
+              }
+            },
+            "fileName": "blog image post.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "2NvnCSMmSyAia0KZCno52L",
+        "type": "Asset",
+        "createdAt": "2023-12-19T21:59:10.090Z",
+        "updatedAt": "2023-12-19T22:01:55.452Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-12-19T22:01:55.452Z",
+        "firstPublishedAt": "2023-12-19T22:01:55.452Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HooperStore highlight"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/2NvnCSMmSyAia0KZCno52L/e75db06fb3cb13b5c64ecaee2f30db8c/hooperHero.png",
+            "details": {
+              "size": 539853,
+              "image": {
+                "width": 1920,
+                "height": 949
+              }
+            },
+            "fileName": "hooperHero.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "143KBo3sLKLqZ2KxCN4NW2",
+        "type": "Asset",
+        "createdAt": "2023-12-19T22:02:09.381Z",
+        "updatedAt": "2023-12-19T22:02:58.148Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-12-19T22:02:58.148Z",
+        "firstPublishedAt": "2023-12-19T22:02:58.148Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HooperStore Cart"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/143KBo3sLKLqZ2KxCN4NW2/27dca992aba681d70420f68f96a0dfd3/HooperstoreCart.png",
+            "details": {
+              "size": 906391,
+              "image": {
+                "width": 1920,
+                "height": 949
+              }
+            },
+            "fileName": "HooperstoreCart.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "5hloeF1xydIGr4CuF9W7dJ",
+        "type": "Asset",
+        "createdAt": "2023-12-19T22:03:08.101Z",
+        "updatedAt": "2023-12-19T22:03:47.071Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-12-19T22:03:47.071Z",
+        "firstPublishedAt": "2023-12-19T22:03:47.071Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HooperStore Home"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/5hloeF1xydIGr4CuF9W7dJ/a0cc2e38bfd5b3f767de27cbf8cf7b61/hooperStoreHome.png",
+            "details": {
+              "size": 742263,
+              "image": {
+                "width": 1920,
+                "height": 946
+              }
+            },
+            "fileName": "hooperStoreHome.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "1IRg7qnWIzQNqplvFnaIiW",
+        "type": "Asset",
+        "createdAt": "2023-12-19T22:03:56.130Z",
+        "updatedAt": "2023-12-19T22:04:23.175Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-12-19T22:04:23.175Z",
+        "firstPublishedAt": "2023-12-19T22:04:23.175Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HooperStore Stripe"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/1IRg7qnWIzQNqplvFnaIiW/134813cbb64475891cc6c5e2f62e8362/HooperStoreStripe.png",
+            "details": {
+              "size": 94108,
+              "image": {
+                "width": 1920,
+                "height": 948
+              }
+            },
+            "fileName": "HooperStoreStripe.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "5JHdBbwavJwklxHwRV07O3",
+        "type": "Asset",
+        "createdAt": "2023-12-19T22:27:26.837Z",
+        "updatedAt": "2023-12-19T22:27:59.765Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-12-19T22:27:59.765Z",
+        "firstPublishedAt": "2023-12-19T22:27:59.765Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "MealnuHightlight"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/5JHdBbwavJwklxHwRV07O3/b0abb28b96fdb8fdb926f87f0bcb68a5/MealnuHome.png",
+            "details": {
+              "size": 882258,
+              "image": {
+                "width": 1920,
+                "height": 948
+              }
+            },
+            "fileName": "MealnuHome.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "7kVC1EcRiiHwPbIMloNAwn",
+        "type": "Asset",
+        "createdAt": "2023-12-19T22:28:34.830Z",
+        "updatedAt": "2023-12-19T22:29:08.803Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-12-19T22:29:08.803Z",
+        "firstPublishedAt": "2023-12-19T22:29:08.803Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mealnu Dark"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/7kVC1EcRiiHwPbIMloNAwn/d300945b048286277d2f77907d6efd25/mealnuDark.png",
+            "details": {
+              "size": 978857,
+              "image": {
+                "width": 1920,
+                "height": 946
+              }
+            },
+            "fileName": "mealnuDark.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "2v7tDRwAPb24xqaQrWl6aD",
+        "type": "Asset",
+        "createdAt": "2023-12-19T22:29:13.865Z",
+        "updatedAt": "2023-12-19T22:29:38.787Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-12-19T22:29:38.787Z",
+        "firstPublishedAt": "2023-12-19T22:29:38.787Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mealnu Product"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/2v7tDRwAPb24xqaQrWl6aD/b7f36c746fdb76004a11e17e059af375/MealnuProduct.png",
+            "details": {
+              "size": 646204,
+              "image": {
+                "width": 1920,
+                "height": 948
+              }
+            },
+            "fileName": "MealnuProduct.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "6Fckudo7P8iV9lLDrK3fxg",
+        "type": "Asset",
+        "createdAt": "2023-12-19T23:12:33.394Z",
+        "updatedAt": "2023-12-19T23:12:52.775Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-12-19T23:12:52.775Z",
+        "firstPublishedAt": "2023-12-19T23:12:52.775Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Codetech Hero"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/6Fckudo7P8iV9lLDrK3fxg/0de5bd25814fe9a6994c1685629b2b26/CodetechHero.png",
+            "details": {
+              "size": 203962,
+              "image": {
+                "width": 1920,
+                "height": 946
+              }
+            },
+            "fileName": "CodetechHero.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "4vxet54v3yS31aUCihigBK",
+        "type": "Asset",
+        "createdAt": "2023-12-19T23:12:59.541Z",
+        "updatedAt": "2023-12-19T23:13:22.137Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-12-19T23:13:22.137Z",
+        "firstPublishedAt": "2023-12-19T23:13:22.137Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Codetech Cta"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/4vxet54v3yS31aUCihigBK/2cd51e86a63232f6cc9fa7cca737b21c/CodetechCta.png",
+            "details": {
+              "size": 82611,
+              "image": {
+                "width": 1920,
+                "height": 946
+              }
+            },
+            "fileName": "CodetechCta.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "19WOypshM4NZkQSHdp8xlF",
+        "type": "Asset",
+        "createdAt": "2023-12-19T23:13:28.231Z",
+        "updatedAt": "2023-12-19T23:13:49.304Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-12-19T23:13:49.304Z",
+        "firstPublishedAt": "2023-12-19T23:13:49.304Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Codetech Chat"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/19WOypshM4NZkQSHdp8xlF/882ca14870ae115646ae33cac89f8e1e/CodetechChat.png",
+            "details": {
+              "size": 133465,
+              "image": {
+                "width": 1920,
+                "height": 948
+              }
+            },
+            "fileName": "CodetechChat.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "5lNacncuGJ8d5LOx6tntvQ",
+        "type": "Asset",
+        "createdAt": "2023-12-24T00:07:07.874Z",
+        "updatedAt": "2023-12-24T00:07:44.596Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-12-24T00:07:44.596Z",
+        "firstPublishedAt": "2023-12-24T00:07:44.596Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HooperStore Banner"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/5lNacncuGJ8d5LOx6tntvQ/46f251ea7018aaf5f98274fa365ae83e/HooperStore_Banner.jpg",
+            "details": {
+              "size": 655589,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "HooperStore Banner.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "3tLcuEP4PFsE70gY599Ogv",
+        "type": "Asset",
+        "createdAt": "2023-12-24T00:09:13.884Z",
+        "updatedAt": "2023-12-24T00:09:28.323Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-12-24T00:09:28.323Z",
+        "firstPublishedAt": "2023-12-24T00:09:28.323Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mealnu Banner"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/3tLcuEP4PFsE70gY599Ogv/cb075e76201706edc28dacdd28124aa6/Mealnu_Banner.jpg",
+            "details": {
+              "size": 994727,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "Mealnu Banner.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "4JGLwDHqC8O38qLGJ6uw8P",
+        "type": "Asset",
+        "createdAt": "2023-12-24T00:09:37.646Z",
+        "updatedAt": "2023-12-24T00:09:49.737Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-12-24T00:09:49.737Z",
+        "firstPublishedAt": "2023-12-24T00:09:49.737Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Codetech Banner"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/4JGLwDHqC8O38qLGJ6uw8P/6c02450263e70b77adf7c6a07a8d9d3a/Codetech_Banner.jpg",
+            "details": {
+              "size": 382623,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "Codetech Banner.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "3S5L4uZj25i67ExgK6JxCL",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master-2023-12-21",
+            "uuid": "f2e92cda-847b-4d3d-8bcf-4a9b824cd340"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "createdAt": "2023-08-08T22:33:18Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedAt": "2023-08-08T22:33:18Z"
+      }
+    }
+  ],
+  "webhooks": [],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["create"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["create"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3TnYoVQ2pMnvCZIvoARrVd",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "createdAt": "2023-08-08T22:33:19Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedAt": "2023-08-08T22:33:19Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3ToAhvreGXKNZmSX6mYxzx",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "createdAt": "2023-08-08T22:33:19Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedAt": "2023-08-08T22:33:19Z"
+      }
+    },
+    {
+      "name": "Translator",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["read"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": ["update"],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3Tp4xSuwal3gP1PTH7BnBB",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "createdAt": "2023-08-08T22:33:19Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedAt": "2023-08-08T22:33:19Z"
+      }
+    }
+  ]
+}
